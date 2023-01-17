@@ -42,20 +42,23 @@ b := 3
 //complex integers 
 	var h complex64 = 1 +2i 
 	b:= 7 +10i
-	fmt.Printf("%V, %T\h",h,h  )
+	fmt.Printf("%V, %T\n",h,h  )
 	
 	fmt.println(h+b)
 	fmt.println(h-b)
 	fmt.println(h*b)
 	fmt.println(h/b)
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-}
+//strings
+	s :="This is a string "
+	fmt.println("%V,%T/n",s,s)
+ 	s2:= "Its a basic structure"
+	fmt.printf(s + s2) //string concatenation
+	b:= []byte(s)
+	fmt.Printf("%V,%T/n",b ,b )
+
+//rune 
+	x := 'This rocks'
+	fmt.printf("%V, %T\n",x,x)
+
+}	
