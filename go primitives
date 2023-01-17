@@ -17,18 +17,45 @@ func main () {
 //integers of different types cant be added unless you do conversion
 a := 10 
 b := 3
-fmt.println(a+b)
-fmt.println(a-b)
-fmt.println(a*b)
-fmt.println(a/b)
-fmt.println(a%b) // % used to get remainder 
-fmt.println(a & b) //0010
-fmt.println(a | b) //1011 
-fmt.println(a ^ b)//1001
-fmt.println(a &^ b)//100
+	fmt.println(a+b)
+	fmt.println(a-b)
+	fmt.println(a*b)
+	fmt.println(a/b)
+	fmt.println(a%b) // % used to get remainder 
+	fmt.println(a & b) //0010
+	fmt.println(a | b) //1011 
+	fmt.println(a ^ b)//1001
+	fmt.println(a &^ b)//100
 
 
 //bit shifting
 	a := 8 //2^3 
 	fmt.println(a<<3) 2^3 * 2^3  = 2^6
 	fmt.println(a>>3) 2^3 / 2^3 = 2^0
+
+//creating floating numbers
+	var n float64 = 3.14
+	n = 13.7e72
+	n = 2.1E14
+	fmt.printf("%V, %T", n, n)
+
+//complex integers 
+	var h complex64 = 1 +2i 
+	b:= 7 +10i
+	fmt.Printf("%V, %T\h",h,h  )
+	
+	fmt.println(h+b)
+	fmt.println(h-b)
+	fmt.println(h*b)
+	fmt.println(h/b)
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}
