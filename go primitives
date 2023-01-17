@@ -6,7 +6,9 @@ import (
 
 func main () {
 	var n bool = false 
-	fmt.printf(%V,%T\n, n, n)
+	fmt.printf(%V,%T, n, n)
 	m:=2 ==2
-	n:=2 ==3
+	l:=2 ==3
+	fmt.printf(%V,%T, m, m)
+	fmt.printf(%V,%T, l, l)
 }
