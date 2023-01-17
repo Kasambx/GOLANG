@@ -11,4 +11,24 @@ func main () {
 	l:=2 ==3
 	fmt.printf(%V,%T, m, m)
 	fmt.printf(%V,%T, l, l)
-}
+
+
+//integers
+//integers of different types cant be added unless you do conversion
+a := 10 
+b := 3
+fmt.println(a+b)
+fmt.println(a-b)
+fmt.println(a*b)
+fmt.println(a/b)
+fmt.println(a%b) // % used to get remainder 
+fmt.println(a & b) //0010
+fmt.println(a | b) //1011 
+fmt.println(a ^ b)//1001
+fmt.println(a &^ b)//100
+
+
+//bit shifting
+	a := 8 //2^3 
+	fmt.println(a<<3) 2^3 * 2^3  = 2^6
+	fmt.println(a>>3) 2^3 / 2^3 = 2^0
