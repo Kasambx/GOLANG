@@ -69,9 +69,66 @@ func main() {
 	fmt.Println(a)
 	fmt.Println(b)
 	fmt.Printf("Length: %v\n", len(a))
-	fmt.Printf("Capacity: %v\n" cap(a))
+	fmt.Printf("Capacity: %v\n",cap(a))
 	
 }
+
+//another way of creating a slice
+
+func main() {
+	a:= []int{1,2,3,4,5,6,7,8,9,10}
+	b:= a[:] //slice of all elements
+	c :=a[3:] //slice from 4th element to end
+	d:=a[6:] //slice first 6 elements
+	e:=a[3:6] //slice the 4th, 5th and 6th elements
+	fmt.Println(a)
+	fmt.Println(b)
+	fmt.Println(c)
+	fmt.Println(d)
+	fmt.Println(e)	
+}
+
+
+//creating a slice using the make function
+func main() {
+	z:= make([]int, 3 , 100)
+	fmt.Println(z)
+	fmt.Printf("Length: %v\n", len(z))
+	fmt.Printf("Capacity: %v\n",cap(z))
+	
+}
+
+
+
+//slices size can be modified look on the code below 
+func main(){
+	a:= []int{}
+	fmt.Println(a)
+	fmt.Printf("Length: %v\n", len(a))
+	fmt.Printf("Capacity: %v\n", cap(a))
+	a = append(a,1)
+	fmt.Println(a)
+	fmt.Printf("Lenght: %v\n", len(a))
+	fmt.Printf("Capacity: %v\n", cap(a))
+	a = append(a,2,3,4,5,6)
+	fmt.Printf("Lenght: %v\n", len(a))
+	fmt.Printf("Capacity: %v\n", cap(a))
+	a = append(a, []int{2,3,4,5,6}...) // say if you want to concatenate arrays use "..." after the second string for the procedure to be successful 
+}
+
+func main() {
+	a := []int{2,3,4,5,6}
+	b := a[1: ]  //pops the first elemnent of the slice -- its called the shift operation 
+	fmt.Println(b )
+	c:= a[:len(a)-1] //removes the last element of the slice 
+	fmt.Println(c)
+	b := append(a[:2],a[3:]...)//removing the middle element by concatenating two slices   
+
+}
+
+
+
+
 
 
 
