@@ -24,3 +24,14 @@ func main () {
 	var students [3]string
 	fmt.PrinfF("Students:%v", students)
 }
+
+func main() {
+	var students [3]string
+	fmt.Printf("Students: %v", students)
+	students[0] = "Lisa"
+	students[1] = "Ahmed"
+	students[2] = "Arnold"
+	fmt.Printf("Students: %v\n", students)
+	fmt.Printf("Students: %v\n", students[2])
+	fmt.Printf("No of Students: %v\n", len(students))
+}
