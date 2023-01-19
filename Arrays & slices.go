@@ -16,5 +16,11 @@ func main() {
 //now for the array 
 
 func main() {
-  grades :=[3]int{97,85,93 }
+  grades :=[...]int{97,85,93 }
   fmt.Printf("Grades: %v" , grades)
+}
+
+func main () {
+	var students [3]string
+	fmt.PrinfF("Students:%v", students)
+}
