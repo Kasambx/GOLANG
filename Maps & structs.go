@@ -17,7 +17,15 @@ func main() {
 	      delete(statePopulations, "Georgia") //deleting elements
 	      fmt.Println(statePopulations)
 	      fmt.Println(statePopulations["New York"]) // getting a single value of a key      
-  	    pop, ok := statePopulations["Georgia"]  //shows whether the element is present and its value
+  	      pop, ok := statePopulations["Georgia"]  //shows whether the element is present and its value
 	      fmt.Println(pop, ok)
-        fmt.Println(len(statePopulations))
-}
+              fmt.Println(len(statePopulations))
+	
+//passing out the map as another variable and checking what happns if you delete one element
+	      sp := statePopulations				
+	      delete(sp, "Ohio")			
+	      fmt.Println(sp)
+	      fmt.Println(statePopulations)
+}      
+
+
