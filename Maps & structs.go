@@ -29,3 +29,6 @@ func main() {
 }      
 
 
+
+// STRUCS 
+
