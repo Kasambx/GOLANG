@@ -54,7 +54,24 @@ func main() {
 		},
 	}
 	fmt.Println(aDoctor)
-
+	fmt.Println(aDoctor.actorName)// getting a value in the structz
+	fmt.Println(aDoctor.companions)    // getting a value of the companions in the struct
+	fmt.Println(aDoctor.companions[1]) // getting a specific value in the struct
 }
 
 
+// creating an annonymous struct
+package main
+
+import (
+	"fmt"
+)
+
+type Doctor struct {
+	name string
+}
+
+func main() {
+	aDoctor := struct{ name string }{name: "Jon Pertwee"}
+	fmt.Println(aDoctor)
+}
