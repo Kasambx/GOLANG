@@ -68,7 +68,7 @@ func main() {
 	if guess < 1 || guess > 100 {		// || id the or operator command is executed if one of the requiements is fulfiled
 		fmt.Println("The guess must be between 1 and 100!")
 	}
-	if guess >= 1 && guess <= 100 {		// && its the and operator both conditions have to be met for the command to be executed 
+	if guess >= 1 && guess <= 100 {		// && its the and operator both conditions have to be met for the command to be executed    // you can also replace this line with else{} operator 
 		if guess < number {
 			fmt.Println("Too Low")
 
