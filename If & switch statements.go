@@ -85,5 +85,58 @@ func main() {
 
 
 
+				//SWITCH STATEMENTS 
+package main
 
+import (
+	"fmt"
+)
+
+func main() {
+	switch 2 {
+	case 1:
+		fmt.Println("One")
+	case 2:
+		fmt.Println("Two")
+	default:
+		fmt.Println("not one ot two")
+	}
+}
+
+
+// when dealing with more values 
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	switch 2 {
+	case 1, 2, 3:
+		fmt.Println("One, two or three")
+	case 4, 5, 6:
+		fmt.Println("four, five or six")
+	default:
+		fmt.Println("not one ot two")
+	}
+}
+
+// another example 
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	switch i := 2 + 3; i {
+	case 1, 2, 3:
+		fmt.Println("One, two or three")
+	case 4, 5, 6:
+		fmt.Println("four, five or six")
+	default:
+		fmt.Println("not one ot two")
+	}
+}
 
