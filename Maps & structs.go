@@ -75,3 +75,14 @@ func main() {
 	aDoctor := struct{ name string }{name: "Jon Pertwee"}
 	fmt.Println(aDoctor)
 }
+
+/unlike maps and arrays when you pass it to another function you are just making a copy of it 
+
+func main() {
+	aDoctor := struct{ name string }{name: "John Pertwee"}
+	anotherDoctor := aDoctor
+	anotherDoctor.name = "Tom Baker"
+	fmt.Println(aDoctor)
+	fmt.Println(anotherDoctor)
+}
+
