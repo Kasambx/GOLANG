@@ -140,3 +140,78 @@ func main() {
 	}
 }
 
+
+
+//tagless switches
+
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	i := 8
+	switch {
+	case i <= 10:
+		fmt.Println("Less than 10")
+	case i <= 20:
+		fmt.Println("Less than 20")
+	default:
+		fmt.Println("Beyond or under capacity ")
+	}
+}
+
+
+
+//type switch 
+// it finds the type of the variable 
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	var i interface{} = 1
+	switch i.(type) {
+	case int:
+		fmt.Println("i is an int")
+	case float64:
+		fmt.Println("i is a float64")
+	case string:
+		fmt.Println("i is a string")
+	default:
+		fmt.Println("i is another type")
+	}
+}
+
+
+
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	var i interface{} = 1.09
+	switch i.(type) {
+	case int:
+		fmt.Println("i is an int")
+		break 				// exits out of the switch statements early otice only the first line is printed 
+		fmt.Println("This is true ")
+	case float64:
+		fmt.Println("i is a float64")
+	case string:
+		fmt.Println("i is a string")
+	default:
+		fmt.Println("i is another type")
+	}
+}
+
+
+
+
+
+
