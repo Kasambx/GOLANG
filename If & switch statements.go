@@ -56,6 +56,32 @@ func main() {
 }
 
 
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	number := 50
+	guess := 370
+	if guess < 1 || guess > 100 {		// || id the or operator command is executed if one of the requiements is fulfiled
+		fmt.Println("The guess must be between 1 and 100!")
+	}
+	if guess >= 1 && guess <= 100 {		// && its the and operator both conditions have to be met for the command to be executed 
+		if guess < number {
+			fmt.Println("Too Low")
+
+		}
+		if guess > number {
+			fmt.Println("Too high")
+		}
+		if guess == number {
+			fmt.Println("You got it !")
+		}
+		fmt.Println(number <= guess, number >= guess, number != guess) //returns boolean expressions for the variable in the func mamin statement
+	}
+}
 
 
 
