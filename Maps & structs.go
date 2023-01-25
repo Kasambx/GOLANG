@@ -117,3 +117,56 @@ func main() {
 	fmt.Println(b)
 }
 
+package main
+
+
+
+//simplified version of the code above
+import (
+	"fmt"
+)
+
+type Animal struct {
+	Name   string
+	Origin string
+}
+
+type Bird struct {
+	Animal
+	SpeedKPH float32
+	CanFly   bool
+}
+
+func main() {
+	b := Bird{
+		Animal:   Animal{Name: "Emu", Origin: "Australia"},
+		SpeedKPH: 48,
+		CanFly:   false,
+	}
+
+	fmt.Println(b.Name)
+}
+
+
+//use of Tags 
+package main
+
+import (
+	"fmt"
+	"reflect"
+)
+
+	
+type Animal struct {
+	Name   string `required max:"100"`
+	Origin string
+}
+
+func main() {
+	t := reflect.TypeOf(Animal{})
+	field, _ := t.FieldByName("Name")
+	fmt.Println(field.Tag)
+}
+
+
+
