@@ -89,3 +89,27 @@ func main() {
 		fmt.Println(k, v)
 	}
 }
+
+
+// looping on maps 
+
+package main
+
+import "fmt"
+
+func main() {
+	statePopulations := make(map[string]int) //one way to make a map
+	statePopulations = map[string]int{       //the second way to make a map
+		"California":   39260017,
+		"Texas":        27862596,
+		"Florida":      20612439,
+		"New York":     19745289,
+		"Pennsylvania": 12802503,
+		"Illinois":     12801539,
+		"Ohio":         11614373,
+	}
+	for k, v := range statePopulations {
+		fmt.Println(k, v)
+	}
+
+}
