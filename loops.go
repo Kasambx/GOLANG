@@ -115,7 +115,7 @@ func main() {
 }
 
 // looping on strings 
-// n/b it will produce bitwise results 
+// n/b it will produce unicode representations of the string 
 package main
 
 import "fmt"
