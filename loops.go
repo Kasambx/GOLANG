@@ -113,3 +113,20 @@ func main() {
 	}
 
 }
+
+// looping on strings 
+// n/b it will produce bitwise results 
+package main
+
+import "fmt"
+
+func main() {
+	s := "Hello go !"
+	for k, y := range s {
+		fmt.Println(k, y)
+	}
+}
+
+
+
+
