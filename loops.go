@@ -42,3 +42,38 @@ func main() {
 		}
 	}
 }
+
+
+
+//use of the break statement in looping
+package main
+
+import "fmt"
+
+func main() {
+	i := 0
+	for {
+		fmt.Println(i)
+		i++
+		if i == 5 {
+			break
+		}
+	}
+}
+
+
+// nested loops 
+package main
+
+import "fmt"
+
+func main() {
+	for i := 1; i <= 3; i++ {
+		for j := 1; j <= 3; j++ {
+			fmt.Println(i * j)
+		}
+	}
+}
+
+
+
