@@ -124,6 +124,7 @@ func main() {
 	s := "Hello go !"
 	for k, y := range s {
 		fmt.Println(k, y)
+		fmt.Println(k, string(y))
 	}
 }
 
