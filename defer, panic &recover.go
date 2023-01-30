@@ -59,3 +59,20 @@ func main() {
 }
 
 
+// a simple webserver using go  lang andthe panic function 
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	http.handleFUnc("/", func(w http.ResponseWriter, r *http.Requsest) {
+		w.Write([]byte("Hello Go !"))
+	})
+	err := http.ListenAndServer(":8080", nil)
+	if err != nil {
+		panic(err.Error())
+	
+	}
+}
