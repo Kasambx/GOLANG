@@ -17,3 +17,20 @@ func main() {
 }
 
 
+// innitializing a variable to a pointer to an object
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	var ms *myStruct
+	ms = new(myStruct)
+	ms.foo = 42
+	fmt.Println(ms.foo)
+}
+
+type myStruct struct {
+	foo int
+}
