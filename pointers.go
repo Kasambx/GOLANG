@@ -17,7 +17,7 @@ func main() {
 }
 
 
-// dereferencing pointers
+// creating pointers to objects 
 package main
 
 import (
