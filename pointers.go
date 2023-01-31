@@ -34,3 +34,21 @@ func main() {
 type myStruct struct {
 	foo int
 }
+
+
+
+// note the same also happens in maps 
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	a := map[string]string{"foo": "bar", "baz": "buz"}
+	b := a
+	fmt.Println(a, b)
+	a["foo"] = "qux"
+	fmt.Println(a, b)
+}
+
