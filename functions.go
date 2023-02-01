@@ -84,3 +84,28 @@ func sayGreeting(greeting, name *string) {
 	fmt.Println(*name)
 }
 
+
+
+//variadric parameters 
+
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	sum(1, 2, 3, 4, 5)		//made a generic sum function  
+}
+
+func sum(values ...int) {  //tells the go runtime to take all of the arguments into a slice caleed values
+
+	fmt.Println(values)	//prints out all of the value variables
+	result := 0
+	for _, v := range values {
+		result += v
+	}
+	fmt.Println("The sum is", result)
+}
+
+
