@@ -109,3 +109,24 @@ func sum(values ...int) {  //tells the go runtime to take all of the arguments i
 }
 
 
+// use of return statement
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	sum(1, 2, 3, 4, 5) //made a generic sum function
+}
+
+func sum(values ...int) int { //tells the go runtime to take all of the arguments into a slice caleed values
+
+	fmt.Println(values) //prints out all of the value variables
+	result := 0
+	for _, v := range values {
+		result += v
+	}
+	return result		// returns the value of the variable result
+}
+
