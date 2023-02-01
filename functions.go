@@ -210,3 +210,28 @@ func main() {
 	}()
 }
 
+
+
+//another function as a type 
+// annonymous function
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	f := func() {
+		fmt.Println("Hello Go !")
+	}
+	f()
+}
+
+
+
+
+
+
+
+
+
