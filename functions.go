@@ -152,3 +152,19 @@ func sum(values ...int) *int { //tells the go runtime to take all of the argumen
 	return &result // returns the value of the variable result
 }
 
+
+//returning multiple return values form a function
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	d := divide(5.0, 3.0)
+	fmt.Println(d)
+}
+
+func divide(a, b float64) float64 {
+	return a / b
+}
