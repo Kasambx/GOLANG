@@ -194,3 +194,19 @@ func divide(a, b float64) (float64, error) {
 	}
 	return a / b, nil
 }
+
+
+//functions as variable 
+//annonymous function
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	func() {
+			fmt.Println("Hello Go !")
+	}()
+}
+
