@@ -62,4 +62,25 @@ func sayGreeting(greeting, name string) {
 }
 
 
+//variadic parameters
+
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	greeting := "Hello"
+	name := "Stacey"
+	sayGreeting(&greeting, &name)
+	fmt.Println(greeting, name)
+
+}
+
+func sayGreeting(greeting, name *string) {
+	fmt.Println(*greeting, *name)
+	*name = "Ted"		//if i change the name using pointers it will be modified it cannot change normally for it is declared  in another function
+	fmt.Println(*name)
+}
 
