@@ -45,5 +45,21 @@ func sayMessage(msg string, idx int) {
 }
 
 
+// function that prints out the values of other functions
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	sayGreeting("Hello", " Kasamba!")
+
+}
+
+func sayGreeting(greeting, name string) {
+	fmt.Println(greeting, name)
+}
+
 
 
