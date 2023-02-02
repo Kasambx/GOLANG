@@ -39,3 +39,18 @@ func main() {
 	msg = "Goodbye"
 	wg.Wait()
 }
+
+
+
+
+//GOMAXPROCS -- shows the number of threads used
+package main
+
+import (
+	"fmt"
+	"runtime"
+)
+
+func main() {
+	fmt.Printf("Threads: %v\n", runtime.GOMAXPROCS(-1)) //shows the number of threads
+}
