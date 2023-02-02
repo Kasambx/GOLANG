@@ -15,3 +15,27 @@ func main() {
 func sayHello() {
 	fmt.Println("Hello")
 }
+
+
+
+// go routines
+// you can also use a wait group instead of sleep
+package main
+
+import (
+	"fmt"
+	"sync"
+)
+
+var wg = sync.WaitGroup{} // you can also use a wait group instead of sleep
+
+func main() {
+	var msg = "Hello"
+	wg.Add(1)
+	go func(msg string) {
+		fmt.Println(msg)
+		wg.Done()
+	}(msg)
+	msg = "Goodbye"
+	wg.Wait()
+}
