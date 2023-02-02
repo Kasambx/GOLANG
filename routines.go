@@ -52,5 +52,5 @@ import (
 )
 
 func main() {
-	fmt.Printf("Threads: %v\n", runtime.GOMAXPROCS(-1)) //shows the number of threads
+	fmt.Printf("Threads: %v\n", runtime.GOMAXPROCS(-1)) //shows the number of threads -1 shows the no of threads that are used
 }
